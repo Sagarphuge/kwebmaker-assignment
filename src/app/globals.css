@@ -24,3 +24,57 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.primary-gradient {
+  background: linear-gradient(to right, #003a5d, #99b81a);
+}
+
+.launching-gradient {
+  background: linear-gradient(to bottom right, #003a5d, #99b81a);
+}
+
+
+
+.marquee {
+  animation: marquee 18s linear infinite;
+}
+
+.marquee-wrapper:hover .marquee {
+  animation-play-state: paused;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.stroke-text {
+  color: transparent;
+  -webkit-text-stroke: 2px #99b81a;
+}
+
+.marquee-helvetica {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.bg-primary {
+  background-color: #99b81a;
+}
+
+.bg-primary-transparent {
+  background-color: hsla(72, 75%, 41%, 0.60);
+}
+
+.text-primary {
+  color: #99b81a;
+}
+
+.border-primary {
+  border-color: #99b81a;
+  ;
+}
